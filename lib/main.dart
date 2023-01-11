@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           ],
         ),
       title: "Test Responsive Framework",
-      home: const HomeScreen(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
