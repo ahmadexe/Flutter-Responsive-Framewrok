@@ -24,20 +24,23 @@ class HomeScreen extends StatelessWidget {
                 rowMainAxisAlignment: MainAxisAlignment.center,
                 rowPadding: const EdgeInsets.all(16),
                 columnPadding: const EdgeInsets.all(16),
-                layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP) ?ResponsiveRowColumnType.COLUMN : ResponsiveRowColumnType.ROW,
+                layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+                    ? ResponsiveRowColumnType.COLUMN
+                    : ResponsiveRowColumnType.ROW,
                 children: [
                   ResponsiveRowColumnItem(
                     child: Container(
-                      height: 700,
-                      width: 700,
+                      height: 400,
+                      width: 400,
                       color: Colors.red,
-                      child: Image.asset('assets/images/rnd1.jpg', fit: BoxFit.fill),
+                      child: Image.asset('assets/images/rnd1.jpg',
+                          fit: BoxFit.fill),
                     ),
                   ),
                   ResponsiveRowColumnItem(
                     child: Container(
-                      height: 700,
-                      width: 700,
+                      height: 400,
+                      width: 400,
                       color: Colors.blue,
                       child: Image.asset(
                         'assets/images/rnd2.jpg',
@@ -47,10 +50,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   ResponsiveRowColumnItem(
                     child: Container(
-                      height: 700,
-                      width: 700,
+                      height: 400,
+                      width: 400,
                       color: Colors.yellow,
-                      child: Image.asset('assets/images/rnd3.jpg', fit: BoxFit.fill),
+                      child: Image.asset('assets/images/rnd3.jpg',
+                          fit: BoxFit.fill),
                     ),
                   ),
                 ],
