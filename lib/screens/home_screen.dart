@@ -10,7 +10,6 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Center(
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 height: 700,
