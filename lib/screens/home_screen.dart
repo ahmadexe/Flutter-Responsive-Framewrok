@@ -10,7 +10,24 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: const ResponsiveVisibility(
+          hiddenWhen: [Condition.largerThan(name: TABLET)],
+          child: Icon(Icons.menu),
+        ),
+        toolbarHeight: 40,
+        actions: const [
+          ResponsiveVisibility(
+              visible: false,
+              visibleWhen: [Condition.largerThan(name: TABLET)],
+              child: Text("Do something")),
+          SizedBox(width: 30),
+          ResponsiveVisibility(
+              visible: false,
+              visibleWhen: [Condition.largerThan(name: TABLET)],
+              child: Text("Foo bar")),
+        ],
+      ),
       body: Scrollbar(
         controller: controller2,
         thumbVisibility: true,
